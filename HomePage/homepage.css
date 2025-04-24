@@ -10,12 +10,16 @@
     font-family: Arial, sans-serif;
   }
   
+  .Sidebar {
+    display: flex;
+    min-height: 100vh;
+  }
+  
   /* Sidebar */
   #sidebar {
     background-color: #30a6db;
     color: white;
     width: 220px;
-    min-height: 100vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -25,22 +29,21 @@
   #logo {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
   }
   
   #nav-menu ul {
     list-style: none;
-    padding: 0;
   }
   
   #nav-menu li {
-    margin: 20px 0;
+    margin: 40px 0;
   }
   
   #nav-menu a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     transition: color 0.3s;
   }
   
@@ -58,7 +61,7 @@
   #main-container {
     flex: 1;
     padding: 20px;
-    background-color: #e66c6c;
+    background-color: #f4faff;
   }
   
   /* Stories Section */
@@ -72,19 +75,20 @@
     background-color: #afddff;
     padding: 20px;
     border-radius: 10px;
+    flex-wrap: wrap; /* in case it breaks on smaller screens */
   }
   
   .story-thumb {
     background-color: #3ab3e7;
-    height: 180px;
-    width: 160px;
+    height: 160px;
+    width: 110px;
     border-radius: 20%;
   }
   
   /* Story Labels */
   .story-labels {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #afddff;
     padding: 10px 0;
     margin-top: 10px;
@@ -92,11 +96,10 @@
   }
   
   .story-labels h4 {
-    flex: 1;
+    width: 110px;
     text-align: center;
     font-size: 16px;
   }
-  
   /* Recommendations Section */
   .recommendations {
     display: flex;
@@ -108,7 +111,7 @@
   .recommendations .post {
     background-color: #afddff;
     height: 250px;
-    width: calc(50% - 20px);
+    width: calc(33.33% - 13.33px); /* To fit 3 posts in a row with gaps */
     border-radius: 10px;
   }
   
