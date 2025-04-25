@@ -72,7 +72,7 @@
   .story-thumbnails {
     display: flex;
     justify-content: space-between;
-    background-color: #afddff;
+    background-color: #f4faff;
     padding: 20px;
     border-radius: 10px;
     flex-wrap: wrap; /* in case it breaks on smaller screens */
