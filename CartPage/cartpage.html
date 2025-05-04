@@ -3,197 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>5 Star Bakery Cart</title>
-  <link rel="stylesheet" href="cartpage.css">
+  <title>LocalBuzz</title>
+  <link rel="stylesheet" href="cartpage.css" 
 </head>
 <body>
-  <aside id="sidebar">
-    <div id="logo">LocalBuzz</div>
-    <nav id="nav-menu">
+  <aside class="sidebar">
+    <div class="logo">LocalBuzz</div>
+    <nav class="nav-menu">
       <ul>
-        <li><a href="/HomePage/homepage.html">Home</a></li>  <!--for the links use in future-->
+        <li><a href="/HomePage/homepage.html">Home</a></li>
         <li><a href="#">Search</a></li>
         <li><a href="#">Following</a></li>
-        <li><a href="#">Near-you</a></li>
-        <li><a href="#">Adding</a></li>
-        <li><a href="#">Profile</a></li>
+        <li><a href="#">Near You</a></li>
+        <li><a href="#">Add Post</a></li>
+        <li><a href="/ProfilePage/profilepage.html">Profile</a></li>
         <li><a href="#">More</a></li>
       </ul>
     </nav>
-    <div>&copy; 2025 LocalBuzz</div>
+    <footer class="sidebar-footer">&copy; 2025 LocalBuzz</footer>
   </aside>
-  <div class="main">
-    <div class="top-bar">
-      <div class="title">5 Star Bakery <input type="text" value="zeron@123" /></div>
-      <div class="right-side">
-        <span>@5star_bakery</span>
-        <button>Print Invoice</button>
-      </div>
+
+  <div class="main-content">
+    <div class="header">
+      <div><strong>5 Star Bakery</strong></div>
+      <input type="text" value="zeron@123" />
+      <div>@5star_bakery</div>
+      <button class="print-btn">Print Invoice</button>
     </div>
-    <div class="products">
-      <div class="product-row">
-		<div class="product">
-			<input type="checkbox" />
-			<img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-			<p>Wireless earphones bluetooth 5.0</p>
-			<div class="quantity">
-			  <button>-</button>
-			  <span>200 * 1</span>
-			  <button>+</button>
-			</div>
-		</div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
+
+    <div class="product-grid">
+      <!-- Example product card (repeat for more products) -->
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/17/52/1a/17521ac6acc4ef2d4a063cf2a5644403.jpg" alt="Product" />
+        <p>Wireless earphones<br>bluetooth 5.0</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$20 * 1</span>
+          <button>+</button>
         </div>
       </div>
-	  <div class="product-row">
-		<div class="product">
-			<input type="checkbox" />
-			<img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-			<p>Wireless earphones bluetooth 5.0</p>
-			<div class="quantity">
-			  <button>-</button>
-			  <span>1</span>
-			  <button>+</button>
-			</div>
-		</div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
+
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/32/9e/77/329e7773d2281ed45dfd435fee21ef3a.jpg" alt="Product" />
+        <p>Noise Cancelling<br>Headphones</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$50 * 1</span>
+          <button>+</button>
         </div>
       </div>
-      <div class="product-row">
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-		  	
+
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/d7/ff/8b/d7ff8b6ca2b5860d100243a9f9b2bb6b.jpg" alt="Product" />
+        <p>Smartwatch<br>Series X</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$75 * 1</span>
+          <button>+</button>
         </div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
+      </div>
+
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/1a/96/75/1a96756708f1423ccaf833b888643403.jpg" alt="Product" />
+        <p>Wireless Charger<br>Fast Charge</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$30 * 1</span>
+          <button>+</button>
         </div>
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
+      </div>
+
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/2e/3a/e4/2e3ae414d3f98f94b782b1a4cdca0672.jpg" alt="Product" />
+        <p>Bluetooth Speaker<br>Mini</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$25 * 1</span>
+          <button>+</button>
         </div>
-		<div class="product">
-			<input type="checkbox" />
-			<img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-			<p>Wireless earphones bluetooth 5.0</p>
-			<div class="quantity">
-			  <button>-</button>
-			  <span>1</span>
-			  <button>+</button>
-			</div>
-		  </div>
-		  
-        <div class="product">
-          <input type="checkbox" />
-          <img src="https://i.pinimg.com/736x/e8/ac/71/e8ac710f155ff4be35d99fd5a195f107.jpg" alt="Product" />
-          <p>Wireless earphones bluetooth 5.0</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
+      </div>
+
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/6c/5a/a1/6c5aa1ca6ce0b12b5d73eaf8b5a9d0b2.jpg" alt="Product" />
+        <p>Fitness Tracker<br>Pro Fit</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$40 * 1</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/95/22/fa/9522fa6324f930d361768a69e32c078f.jpg" alt="Product" />
+        <p>Fitness Tracker<br>Pro Fit</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$40 * 1</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/fe/23/f7/fe23f70424c566c4266c07120125a7f9.jpg" alt="Product" />
+        <p>Fitness Tracker<br>Pro Fit</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$40 * 1</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/24/c3/95/24c39573a8771027fcb66a9bd35e9180.jpg" alt="Product" />
+        <p>Fitness Tracker<br>Pro Fit</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$40 * 1</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <input type="checkbox" />
+        <img src="https://i.pinimg.com/736x/cb/ad/d2/cbadd2ab45481d63d46d3ec00ee7cf5b.jpg" alt="Product" />
+        <p>Fitness Tracker<br>Pro Fit</p>
+        <div class="controls">
+          <button>-</button>
+          <span>$40 * 1</span>
+          <button>+</button>
         </div>
       </div>
     </div>
-    <div class="footer">
+
+    <div class="footer-bar">
       <span>Total Items: 0</span>
-      <span>Bill Amount: 100</span>
-      <button>See Details</button>
+      <span>Bill Amount: $100</span>
+      <button class="details-btn">See Details</button>
     </div>
   </div>
 </body>
