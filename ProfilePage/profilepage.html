@@ -1,25 +1,24 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile-page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page - LocalBuzz</title>
   <link rel="stylesheet" href="profilepage.css" />
 </head>
 <body>
   <div class="Sidebar">
-    
+    <!-- Sidebar Navigation -->
     <aside id="sidebar">
       <div id="logo">LocalBuzz</div>
       <nav id="nav-menu">
         <ul>
-          <li><a href="/HomePage/homepage.html">Home</a></li>  <!--for the links use in future-->
+          <li><a href="/HomePage/homepage.html">Home</a></li>
           <li><a href="#">Search</a></li>
           <li><a href="#">Following</a></li>
-          <li><a href="#">Near-you</a></li>
-          <li><a href="#">Adding</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="#">Near You</a></li>
+          <li><a href="#">Add Post</a></li>
+          <li><a href="/ProfilePage/profilepage.html">Profile</a></li>
           <li><a href="#">More</a></li>
         </ul>
       </nav>
@@ -28,58 +27,80 @@
 
     <!-- Profile Section -->
     <main id="profile-section">
+      <!-- Profile Header -->
       <header id="profile-header">
-        <div class="profile-pic" id="vendor-pic"> <img src="https://i.pinimg.com/736x/05/b4/87/05b48727efb794b501ad45c10696e729.jpg" alt ="Profile Pictute"></div>
+        <div class="profile-pic">
+          <img src="https://i.pinimg.com/736x/4e/1e/e1/4e1ee1b264372375a90580bb31d8df70.jpg" alt="Profile Picture">
+        </div>
+
         <div class="profile-info">
-            <div id="vendor-name-container">
-                <div id="vendor-name">User Name</div>
-                <button id="follow-btn">Follow</button>
-              </div>
-              
+          <div id="vendor-name-container">
+            <div id="vendor-name">5 STAR BAKERY</div>
+            <button id="follow-btn">Follow</button>
+          </div>
+
           <div class="profile-stats">
             <div><strong>12</strong> Posts</div>
             <div><strong>890</strong> Followers</div>
             <div><strong>25</strong> Following</div>
+            <a href="https://maps.app.goo.gl/p4fnjrbDb8St3FEs7" target="_blank">
+              <button class="location-btn">
+                <img src="https://i.pinimg.com/736x/40/29/6f/40296fae130842ba6627a7f9df0cbb40.jpg" alt="Location">
+              </button>
+            </a>
           </div>
+
           <div class="profile-actions">
             <button id="edit-profile-btn">Edit Profile</button>
             <button id="add-product-btn">Add Post</button>
           </div>
         </div>
-        <div class="right-header">
-            <button id="location-btn" title="Get Location">📍</button>
-            <a href="/CartPage/cartpage.html"><button id="cart-btn" title="Your Cart">🛒</button></a>
-          </div>
-          
+
+        <!-- Tools Section -->
+        <div class="profile-tools">
+          <button class="tool-btn">
+            <img src="https://i.pinimg.com/736x/66/c9/6c/66c96c04524e47cc18a4fcbea8c0fc41.jpg" alt="QR Code">
+          </button>
+          <a href="/CartPage/cartpage.html">
+            <button class="tool-btn">
+              <img src="https://i.pinimg.com/736x/3b/79/2c/3b792c505de0362430f21af891458318.jpg" alt="Cart">
+            </button>
+          </a>
+        </div>
       </header>
 
-     <!-- Instagram-style Highlights -->
-<div id="profile-highlights">
-    <div class="highlight">
-      <div class="highlight-icon"></div>
-      <div class="highlight-label">Offers</div>
-    </div>
-    <div class="highlight">
-      <div class="highlight-icon"></div>
-      <div class="highlight-label">New</div>
-    </div>
-    <div class="highlight">
-      <div class="highlight-icon"></div>
-      <div class="highlight-label">Top Rated</div>
-    </div>
-    <div class="highlight">
-      <div class="highlight-icon"></div>
-      <div class="highlight-label">Behind the Scenes</div>
-    </div>
-  </div>
-  
-      <!-- Profile Content Cards -->
-     <!-- Profile Posts -->
-<section id="profile-posts">
-    <div class="post-box">Post Image or Content 1</div>
-    <div class="post-box">Post Image or Content 2</div>
-    <div class="post-box">Post Image or Content 3</div>
-  </section>  
+      <!-- Highlights Section -->
+      <div id="profile-highlights">
+        <div class="highlight">
+          <img src="https://i.pinimg.com/736x/9d/92/e6/9d92e6d40628d90f051308392ef469b3.jpg" alt="Cakes">
+          <p class="highlight-text">Cakes</p>
+        </div>
+        <div class="highlight">
+          <img src="https://i.pinimg.com/736x/83/27/f2/8327f2b4e78ba43ea01a86147980e01d.jpg" alt="Biscuits">
+          <p class="highlight-text">Biscuits</p>
+        </div>
+        <div class="highlight">
+          <img src="https://i.pinimg.com/736x/28/d9/eb/28d9ebf04c0ac827f1ce1d5c8f9c5074.jpg" alt="Cookies">
+          <p class="highlight-text">Cookies</p>
+        </div>
+        <div class="highlight">
+          <img src="https://i.pinimg.com/736x/c6/f6/98/c6f698f6be7cc05f38d6436bc8eece1a.jpg" alt="Reviews">
+          <p class="highlight-text">Reviews</p>
+        </div>
+      </div>
+
+      <!-- Posts Section -->
+      <section id="profile-posts">
+        <div class="post-box">
+          <img src="https://i.pinimg.com/736x/3d/d0/92/3dd0925c9d2c906f2a50b5528314542f.jpg" alt="Post 1">
+        </div>
+        <div class="post-box">
+          <img src="https://i.pinimg.com/736x/a1/62/9e/a1629e5910aaee33015da1509aea0101.jpg" alt="Post 2">
+        </div>
+        <div class="post-box">
+          <img src="https://i.pinimg.com/736x/37/31/ce/3731ced269e05874985d02025fa27a5e.jpg" alt="Post 3">
+        </div>
+      </section>
     </main>
   </div>
 </body>
