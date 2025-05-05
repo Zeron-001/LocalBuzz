@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LocalBuzz - Near Me</title>
+  <link rel="stylesheet" href="nearyoupage.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <div id="logo">LocalBuzz</div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="/HomePage/homepage.html">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Following</a></li>
+        <li><a href="/NearyouPage/nearyoupage.html">Near You</a></li>
+        <li><a href="#">Add Post</a></li>
+        <li><a href="/ProfilePage/profilepage.html">Profile</a></li>
+        <li><a href="#">More</a></li>
+      </ul>
+    </nav>
+    <div>&copy; 2025 LocalBuzz</div>
+  </aside>
+
+  
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <div class="search-area">
+        <img src="https://img.icons8.com/ios-filled/24/search--v1.png" alt="Search Icon" class="search-icon">
+        <input type="text" placeholder="Search Nearby...">
+      </div>
+      <a href="profilepage.html"><img src="https://i.pinimg.com/736x/25/8a/ce/258aceed30772f1cc702e269b67d0bd7.jpg" alt="Profile Icon" class="profile-pic"></a>
+    </header>
+    
+    <div class="map">
+      <img src="map.jpg" alt="Map" class="map-img">
+    </div>
+    
+
+    <div class="map"></div>
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="food">Food</button>
+      <button data-filter="fashion">Fashion</button>
+      <button data-filter="services">Services</button>
+    </div>
+    <div id="cards-container">
+      <div class="cards">
+        <div class="card food">
+          <h3>Cafe</h3>
+          <p>Distance: 1.2 km</p>
+          <p>Rating: ⭐ 4.5</p>
+        </div>
+        <div class="card services">
+          <h3>FitZone Gym</h3>
+          <p>Distance: 2.0 km</p>
+          <p>Rating: ⭐ 4.2</p>
+        </div>
+        <div class="card food">
+          <h3>FreshMart Grocery</h3>
+          <p>Distance: 0.5 km</p>
+          <p>Rating: ⭐ 4.8</p>
+        </div>
+        <div class="card fashion">
+          <h3>Local Style Boutique</h3>
+          <p>Distance: 1.7 km</p>
+          <p>Rating: ⭐ 4.3</p>
+        </div>
+      </div>
+      
+    <div class="trending-section">
+      <h2 id="trending-title">🔥 Trending Now</h2>
+      <div class="trending-cards">
+        <div class="card">
+          <h3>Night Market</h3>
+          <p>Food & Fun</p>
+        </div>
+        <div class="card">
+          <h3>Live Music Cafe</h3>
+          <p>⭐ 4.7</p>
+        </div>
+        <div class="card">
+          <h3>Yoga in Park</h3>
+          <p>Morning Bliss</p>
+        </div>
+        <div class="card">
+          <h3>Tech Meet 2025</h3>
+          <p>Network & Grow</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filters button');
+    const cards = document.querySelectorAll('.card');
+    const trendingTitle = document.getElementById('trending-title'); // Get the title element
+  
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+  
+        // Show/hide trending title
+        if (filter === 'all') {
+          trendingTitle.style.display = 'block';
+        } else {
+          trendingTitle.style.display = 'none';
+        }
+  
+        // Filter cards
+        cards.forEach(card => {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>
